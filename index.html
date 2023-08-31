@@ -19,6 +19,7 @@
           name="fullname"
           id="name"
           placeholder="Enter your name"
+          required
         />
       </div>
       <div class="form-control">
@@ -31,7 +32,7 @@
           required
         />
       </div>
-      <div>
+      <div class="form-control">
         <label id="number-label" for="age">Age (optional)</label>
         <input
           type="number"
@@ -46,7 +47,7 @@
         <label for="dropdown"
           >which option best describes your current role?</label
         >
-        <select name="role" id="dropdown">
+        <select name="role" id="dropdown" required>
           <option value="" disabled selected>choose your role</option>
           <optgroup label="Experienced">
             <option value="manager">manager</option>
@@ -61,10 +62,49 @@
       <div class="form-control">
         <p>Would you recommend our service to a friend?</p>
         <div class="btn-group">
-          <input type="radio" />
-          <label for="">Yes</label>
+          <input name="recommend" type="radio" id="yes" />
+          <label for="yes">Yes</label>
+        </div>
+        <div class="btn-group">
+          <input name="recommend" type="radio" id="maybe" />
+          <label for="maybe">Maybe</label>
+        </div>
+        <div class="btn-group">
+          <input name="recommend" type="radio" id="no" />
+          <label for="no">No</label>
         </div>
       </div>
+      <div class="form-control">
+        <p>What would you like to see improved?</p>
+        <small>(Check all that apply)</small>
+        <div class="btn-group">
+          <input
+            type="checkbox"
+            id="projects"
+            name="projects"
+            value="projects"
+          />
+          <label for="projects">Projects</label>
+        </div>
+        <div class="btn-group">
+          <input type="checkbox" id="wiki" name="wiki" value="wiki" />
+          <label for="wiki">Wiki</label>
+        </div>
+        <div class="btn-group">
+          <input
+            type="checkbox"
+            id="resources"
+            name="resources"
+            value="resources"
+          />
+          <label for="resources">Resources</label>
+        </div>
+        <div class="form-control">
+          <label for="comment">Anything else you want to share with us?</label>
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
