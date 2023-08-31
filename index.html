@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">survey form</h1>
+    <p id="description">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quia
+      optio ex ad repellendus, iure temporibus ipsum! Id, perferendis odit?
+    </p>
+    <form action="" id="survey-form">
+      <div class="form-control">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="fullname"
+          id="name"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="form-control">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div>
+        <label id="number-label" for="age">Age (optional)</label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          placeholder="age"
+        />
+      </div>
+      <div class="form-control">
+        <label for="dropdown"
+          >which option best describes your current role?</label
+        >
+        <select name="role" id="dropdown">
+          <option value="" disabled selected>choose your role</option>
+          <optgroup label="Experienced">
+            <option value="manager">manager</option>
+            <option value="seniordev">Senior Developer</option>
+          </optgroup>
+          <optgroup label="Rookie">
+            <option value="student">student</option>
+            <option value="juniordev">junior dev</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-control">
+        <p>Would you recommend our service to a friend?</p>
+        <div class="btn-group">
+          <input type="radio" />
+          <label for="">Yes</label>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
